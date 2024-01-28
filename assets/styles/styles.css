@@ -23,25 +23,22 @@ body{
     justify-content: center;
     width: 100%;
     overflow-x: hidden;
- 
 }
-
-
 
 .container{
     display: flex;
     flex-direction: column;
-    width: 375px;
     background-color: var(--dark-bg);
 }
 
-
+/* Header,burgerMenu */
 .header {
     display: flex;
     align-items: center;
-justify-content:space-between;
+    justify-content:space-between;
+    padding-left: 10%;
+    padding-right: 10%;
     height: 70px;
-
 }
 
 .headerLogo {
@@ -52,15 +49,13 @@ justify-content:space-between;
 .burger-menu {
     display: flex;
     align-items: center;
-    flex-direction: column;
 }
+
 .burger-container {
     display: flex;
     align-items: center;
-   
 }
 .hamburger {
-  
     width: 40px;
     height: 40px;
     display: flex;
@@ -73,7 +68,6 @@ justify-content:space-between;
 .hamburger.open {
     transform: rotate(-45deg);
 }
-
 .bar {
     background-color: #dbdbdb;
     border-radius: 5px;
@@ -104,29 +98,45 @@ justify-content:space-between;
     transform: rotate(-90deg) translateX(-3px);
 }
 
-.nav-menu a{
-    text-decoration: none;
-}
 .nav-menu {
     list-style: none;
     padding: 0;
     margin: 0;
-    position: relative;
-    top: 60px;
-    /* top: 70px; 
-    right: -20%;  */
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: right 330ms ease-out;
-    display: none; /* Initially hidden */
+    position: absolute;
+    height: 100vh;
+    width: 200px;
+    top: 70px; 
+    right: -80%; 
+    background-color: var(--lighter-bg);
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    transition: right 2s ease-out;
+}
+.nav-menu li{
+    text-decoration: none;
+    color: var(--text-color);
+    text-align: end;
+    padding-right: 20px;
+    font-size: 25px; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.nav-link{
+    text-decoration: none;
+    color: var(--text-color);
+    text-align: center;
+}
+.tbc{
+    color: var(--btn-color);
 }
 .burger-menu.open .nav-menu {
     right: 0;
-    display:block;
+    display: block; 
 }
-
-
-/* section1 */
+.nav-menuForDesktop{
+    display: none;
+}
+/* section1 /Intro/*/
 
 .section1 {
     display: flex;
@@ -140,16 +150,13 @@ justify-content:space-between;
     text-align: flex-start;
    
 }
-
 .section1h2{
     font-size: 30px;
     color: var( --text-color);
     padding-left: 20px;
 }
 
-
-/* section2 */
-
+/* section2/Intro */
 .section2{
     float: left;
     width: 100%;
@@ -165,7 +172,6 @@ article{
     color: var(--text-color);
     line-height: 1.5;
 }
-
 
 .section2 article a {
     display: inline-block;
@@ -185,11 +191,9 @@ article{
 
 
 /* courses */
-
 main{
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     align-content: center;
     background-color:var(--dark-bg) ;
 }
@@ -209,8 +213,7 @@ main{
    align-items: center;
    align-content: center;
    margin-top: 30px;
-    gap: 30px;
-    
+    gap: 30px; 
 }
 
 .coursesCards{
@@ -233,23 +236,19 @@ main{
     object-fit: cover;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
-
 }
 
 
-/* card details */
+/* Course card details */
 .card-dets {
     height: 50px;
     padding: 5px 10px;
     display: flex;
     flex-direction: column;
- 
 }
 
-/* card descriptions */
 .card-description,
 .card-status {
- 
     color: var(--text-color);
 }
 
@@ -274,15 +273,13 @@ main{
     display: flex;
     align-items: center;
     gap: 8px;
-  
 }
 
 .card-btn-parent section {
-
     width: fit-content;
 }
 
-/* arrow img */
+/* arrow */
 .card-btn-parent section img {
     width: 20px;
     height: 12.8px;
@@ -301,13 +298,7 @@ main{
     color: #0083b3;
 }
 
-/* slider  */
-/* Resetting some default styles */
-
-
-/* Basic styling for the slider container */
-
-/* Styling for the slider itself */
+/*Partners  slider  */
 .slider-container {
     display: flex;
     gap: 40px;
@@ -333,13 +324,13 @@ main{
     align-content: center;
     width: 300px;
     padding-left: 20px;
- transition: ease-in-out;
+    transition: ease-in-out;
   }
 
   .slide {
     display: flex;
     align-items: center;
-    flex: 0 0 33.33%; /* Show three slides at a time */
+    flex: 0 0 33.33%; 
   }
 
   .next-btn {
@@ -357,7 +348,6 @@ main{
 
 
   /* acordion */
-
   .faq-section {
     float: left;
     width: 100%;
@@ -384,19 +374,13 @@ main{
     font-size: 22px;
     margin-top: 30px;
     font-weight: 600;
-
-
 }
-
-/* all questions */
-/*  */
 
 .faqallForMobile:hover {
     cursor: pointer;
     color: #bebebe;
 }
 
-/* tbc-accordion */
 .accordion-parent {
     float: left;
     width: 100%;
@@ -458,8 +442,9 @@ main{
     margin-block: 18px;
 }
 
-/* footer */
 
+
+/* footer */
 footer{
     background-color: var(--lighter-bg);
     display: flex;
@@ -469,13 +454,13 @@ footer{
     height: 260px;
     background-color: var(--footer-bg);
     padding: 4% 14% 5% 5%;
-
 }
 
 .footerTBCLogo img{
     width: 106px;
     height: 30px;
 }
+
 .footerSocial{
     display: flex;
     justify-content: space-around;
@@ -504,17 +489,14 @@ footer{
 .footerTerms {
 margin-top: 20px;
 
-
-
 }
 .footerTerms a{
 
     text-decoration: none;
     color: white;
     font-size: 20px;
-
-   
 }
+
 .footerTerms p{
     padding-top: 20px;
     color: white;

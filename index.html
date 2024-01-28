@@ -5,46 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TBC-USAID</title>
-
     <!-- styles -->
     <link rel="stylesheet" href="./assets/styles/styles.css">
     <link rel="stylesheet" href="./assets/styles/responsive.css">
 
 </head>
 <body>
-
     <div class="container">
+<!-- Header -->
+<header class="header">
+    <img class="headerLogo" src="./assets/images/svg files/tbc-main-logo.svg" alt="">
+    <div class="burger-container">
 
+       <!-- Menu for desktop -->
+        <ul class="nav-menuForDesktop">
+            <li class="nav-item">
+                <a href="#" class="nav-link">მთავარი</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">TBC IT</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link tbc">TBC x USAID</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">რისკები</a>
+            </li>
+        </ul>
 
-
-        <header class="header">
-            <img class="headerLogo" src="./assets/images/svg files/tbc-main-logo.svg" alt="">
-            <div class="burger-container">
-                <div class="burger-menu">
-                    <div class="hamburger">
-                        <span class="bar half start"></span>
-                        <span class="bar"></span>
-                        <span class="bar half end"></span>
-                    </div>
-                    <ul class="nav-menu">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">მთავარი</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">TBC IT</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">TBC x USAID</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">რისკები</a>
-                        </li>
-                    </ul>
-                </div>
+<!-- burger menu -->
+        <div class="burger-menu">
+            <div class="hamburger">
+                <span class="bar half start"></span>
+                <span class="bar"></span>
+                <span class="bar half end"></span>
             </div>
-        </header>
-        
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">მთავარი</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">TBC IT</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link tbc">TBC x USAID</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">რისკები</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
 
+<!-- intro -->
 
 <section class="section1">
    <h2 class="section1h2">TBC x USAID</h2>
@@ -52,7 +66,6 @@
 </section>
 
 <section class="section2">
-
    <article>
     „TBC x USAID - ტექნოლოგიური განათლებისთვის “ პროგრამა
     საინფორმაციო ტექნოლოგიებით დაინტერესებულ ადამიანებს
@@ -60,50 +73,45 @@
     პრაქტიკულ კურსებს სხვადასხვა ICT მიმართულებით.
     წარმატებულ კურსდამთავრებულებს ეძლევათ შესაძლებლობა
     დასაქმდნენ თიბისისა და მის პარტნიორ კომპანიებში.
-
     <a href="#">გაიგე მეტი</a>
    </article>
-  
+
 </section>
 
+<!-- courses -->
 
 <main>
     <p class="coursesP">სასწავლო კურსები</p>
 
     <div id="coursesContainer">
-        <!-- cards are genarated by js -->
+        <!-- Course cards are created by js -->
     </div>
 
 </main>
 
-
-
+<!-- Partners Slider -->
 <div class="slider-container" id="slider-container">
     <div class="slider">
       <button class="prev-btn" onclick="changeSlide(-1)"><img src="./assets/images/svg files/arrow-carusel.svg" alt=""></button>
 
       <div class="slides" id="carousel-container">
-        <!-- Images will be dynamically added here using JavaScript -->
+        <!-- Images will be added here using JavaScript -->
       </div>
 
       <button class="next-btn" onclick="changeSlide(1)"><img src="./assets/images/svg files/arrow-carusel.svg" alt=""></button>
     </div>
   </div>
 
-
-
-
-
+  <!-- Frequently Asked Questions -->
   <section class="faq-section">
-    <!-- faq heading/txt -->
+
     <div class="faqHeadingContainer">
         <span class="faq-heading">ხშირად დასმული კითხვები</span>
         <a class="faq-allForDesktop">ყველა კითხვა</a>
     </div>
 
-    <!-- faq accordion parent -->
     <article class="accordion-parent">
-        <!-- accordion using js -->
+        <!-- Accordion using js -->
     </article>
 
    <div class="faqAllforMobileDiv">
@@ -112,7 +120,7 @@
 
 </section>
 
-
+<!-- Footer -->
 <footer>
     <div class="footerTBCLogo">
         <img src="./assets/images/otherImages/FooterTBCLogo.jpg" alt="">
@@ -137,9 +145,9 @@
         </div>
 
     </div>
-
 </footer>
 </div>
+
    <script src="./assets/javaScript/header.js"></script>
    <script src="./assets/javaScript/createCards.js"></script>
    <script src="./assets/javaScript/partnersSlider.js"></script>

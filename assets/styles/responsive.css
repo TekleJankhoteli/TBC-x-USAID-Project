@@ -1,0 +1,241 @@
+@media (min-width: 580px){
+    .header {
+        height: 80px;
+    }
+
+    .burger-menu {
+        display: none; /* Hide the burger menu */
+      }
+
+
+      .nav-menuForDesktop {
+        list-style: none;
+        display: flex;
+        justify-content: space-between; /* Add space between items */
+        align-items: center;
+        margin: 0;
+        padding: 0;
+      }
+
+      .nav-menuForDesktop li {
+        margin: 0;
+      }
+    
+      .nav-menuForDesktop a {
+        text-decoration: none;
+        color: var(--text-color);
+        font-size: 20px;
+        font-weight: 600;
+        padding: 15px; 
+        display: inline-block;
+      }
+
+   .nav-menuForDesktop .tbc {
+    color: var(--links)
+  }
+    .section1 {
+        background-repeat: no-repeat;
+        background-position:top;
+    }
+
+    .section1h2{
+        font-size: 35px;
+    }
+
+    .section2 article a {
+        display:flex;
+       
+    }
+
+    .coursesCards{
+        width: 450px;
+        height: 400px;
+    }
+
+
+/* slider */
+    
+      .slider {
+        width: 600px;
+      }
+    
+      .slides {
+        width: 700px;
+      }
+    
+      .slide {
+        display: flex;
+        align-items: center;
+        flex: 0 0 33.33%; 
+      }
+    
+     /* Faq */
+      .faq-allForDesktop{
+        display: block;
+    }
+
+    .faqHeadingContainer {
+      
+        font-size: 20px;
+    }
+/* footer */
+  footer{
+    display: flex;
+    flex-direction: row;
+  }
+  
+    .footerCoontainer{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+
+    .fbYoutube img{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+
+@media (min-width: 700px){
+    .section1 {
+        background-image: url(/assets/images/otherImages/MainImage.jpg);
+        background-size: cover;
+    }
+
+    .section2 article {
+       font-size: 26px;
+       
+    }
+
+    .section2 article a{
+        font-size: 30px;
+        
+     }
+
+
+     .coursesCards{
+        width: 550px;
+        height: 450px;
+    }
+
+
+    .coursesP{
+        padding-left: 80px;
+        font-size: 28px;
+        letter-spacing: 3px;
+    }
+
+
+    .card-description {
+        font-size: 25px;
+    }
+    
+    .card-status {
+        font-size: 20px;
+    }
+
+    .slider-container {
+    padding-left: 25px;
+    }
+
+.slider {
+        width: 650px;
+      }
+    
+.slides {
+        width: 740px;
+      }
+    
+}
+
+
+@media (min-width: 900px){
+    .slider-container {
+        padding-left: 25px;
+        }
+        
+     .slider {
+                width: 900px;
+              }
+            
+     .slides {
+                width: 800px;
+              }
+              
+     .footerCoontainer{
+                    gap:100px;
+                }
+            
+}
+
+
+@media (min-width: 1400px){
+
+    .headerLogo{
+        width: 180px;
+        height: 40px;
+    }
+    .section1 {
+        height: 400px;
+    }
+
+
+    .section1h2{
+        font-size: 40px;
+       
+    }
+
+    #coursesContainer{
+
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr;
+        padding-left: 40px;
+     }
+     .coursesCards{
+        width: 400px;
+        height: 350px;
+    }
+    .slider-container {
+        padding-left: 50px;
+        }
+        
+         .slider {
+             width: 1400px;
+              }
+            
+         .slides {
+                display: flex;
+                flex-direction: row;
+                width: 1400px;
+                gap: 80px;
+              }
+ 
+       
+        
+              .faqallForMobile{
+                padding-left: 660px;
+             
+             }
+
+
+             .footerTBCLogo img{
+                margin-left: 60px;
+                width: 200px;
+                height: 50px;
+            }
+
+            .footerSocial{
+              display: flex;
+                gap: 100px;
+                margin-left: 200px;
+                margin-top: 50px;
+            }
+
+
+            .footerTerms {
+                margin-top: 50px;
+                
+                }
+                 
+}

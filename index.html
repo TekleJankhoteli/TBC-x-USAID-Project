@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TBC-USAID</title>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <link rel="stylesheet" href="./assets/styles/responsive.css">
+
+</head>
+<body>
+
+    <div class="container">
+
+
+
+        <header class="header">
+            <img class="headerLogo" src="./assets/images/svg files/tbc-main-logo.svg" alt="">
+            <div class="burger-container">
+                <div class="burger-menu">
+                    <div class="hamburger">
+                        <span class="bar half start"></span>
+                        <span class="bar"></span>
+                        <span class="bar half end"></span>
+                    </div>
+                    <ul class="nav-menu">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">მთავარი</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">TBC IT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">TBC x USAID</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">რისკები</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        
+
+
+<section class="section1">
+   <h2 class="section1h2">TBC x USAID</h2>
+   <h2 class="section1h2">ტექნოლოგიური განათლებისთვის</h2>
+</section>
+
+<section class="section2">
+
+   <article>
+    „TBC x USAID - ტექნოლოგიური განათლებისთვის “ პროგრამა
+    საინფორმაციო ტექნოლოგიებით დაინტერესებულ ადამიანებს
+    გთავაზობთ სრულად დაფინანსებულ ონლაინ საგანმანათლებლო
+    პრაქტიკულ კურსებს სხვადასხვა ICT მიმართულებით.
+    წარმატებულ კურსდამთავრებულებს ეძლევათ შესაძლებლობა
+    დასაქმდნენ თიბისისა და მის პარტნიორ კომპანიებში.
+
+    <a href="#">გაიგე მეტი</a>
+   </article>
+  
+</section>
+
+
+<main>
+    <p class="coursesP">სასწავლო კურსები</p>
+
+    <div id="coursesContainer">
+        <!-- cards are genarated by js -->
+    </div>
+
+</main>
+
+
+
+<div class="slider-container" id="slider-container">
+    <div class="slider">
+      <button class="prev-btn" onclick="changeSlide(-1)"><img src="./assets/images/svg files/arrow-carusel.svg" alt=""></button>
+
+      <div class="slides" id="carousel-container">
+        <!-- Images will be dynamically added here using JavaScript -->
+      </div>
+
+      <button class="next-btn" onclick="changeSlide(1)"><img src="./assets/images/svg files/arrow-carusel.svg" alt=""></button>
+    </div>
+  </div>
+
+
+
+
+
+  <section class="faq-section">
+    <!-- faq heading/txt -->
+    <div class="faqHeadingContainer">
+        <span class="faq-heading">ხშირად დასმული კითხვები</span>
+        <a class="faq-allForDesktop">ყველა კითხვა</a>
+    </div>
+
+    <!-- faq accordion parent -->
+    <article class="accordion-parent">
+        <!-- accordion using js -->
+    </article>
+
+   <div class="faqAllforMobileDiv">
+        <a class="faqallForMobile" href="#">ყველა კითხვა</a>
+    </div>
+
+</section>
+
+
+<footer>
+    <div class="footerTBCLogo">
+        <img src="./assets/images/otherImages/FooterTBCLogo.jpg" alt="">
+    </div>
+
+    <div class="footerCoontainer">
+
+        <div class="footerSocial">
+            <button class="footerBtn">მოგვწერეთ</button>
+
+            <div class="fbYoutube">
+                <img src="./assets/images/otherImages/FB.jpg" alt="">
+                <img src="./assets/images/otherImages/YTube.jpg" alt="">
+            </div>
+        </div>
+
+
+        <div class="footerTerms">
+            <p><a href="#">წესები და პირობები</a></p>
+            <p>© 2024 ყველა უფლება დაცულია</p>
+       
+        </div>
+
+    </div>
+
+</footer>
+</div>
+   <script src="./assets/javaScript/header.js"></script>
+   <script src="./assets/javaScript/createCards.js"></script>
+   <script src="./assets/javaScript/partnersSlider.js"></script>
+   <script src="./assets/javaScript/acordion.js"></script>
+</body>
+</html>
